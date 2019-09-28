@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Name</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Website</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody  *ngFor="let i of users" style="background-color: papayawhip">
+      <td>{{i.id}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.username}}</td>
+      <td>{{i.email}}</td>
+      <td>{{i.website}}</td>
+      <td>{{i.address.street}}
+          <br>{{i.address.suite}}
+          <br> {{i.address.city}}
+          <br>{{i.address.zipcode}}
+      </td>
+  </tbody>
+</table>
+</div>
+
